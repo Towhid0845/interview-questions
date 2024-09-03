@@ -1,13 +1,11 @@
-✅ How do you learn new technology?
-    ➡️ n/a
+### How do you learn new technology?✅
+n/a
 
-✅ What is electron js?
-    ➡️ Electron is a framework for building desktop applications using JavaScript, HTML, and CSS. By embedding
-        Chromium and Node. js into its binary, Electron allows you to maintain one JavaScript codebase and create 
-        cross-platform apps that work on Windows, macOS, and Linux — no native development experience is required.
+### ✅ What is electron js?
+Electron is a framework for building desktop applications using JavaScript, HTML, and CSS. By embedding Chromium and Node. js into its binary, Electron allows you to maintain one JavaScript codebase and create cross-platform apps that work on Windows, macOS, and Linux — no native development experience is required.
 
-✅ What is a base64 image?
-    ➡️ Base64 encoding is used in a variety of contexts to encode binary data into a text format. This makes it easier to handle and transmit binary data in systems designed for textual data. Here are some common uses of Base64, including its use with images:
+### ✅ What is a base64 image?
+Base64 encoding is used in a variety of contexts to encode binary data into a text format. This makes it easier to handle and transmit binary data in systems designed for textual data. Here are some common uses of Base64, including its use with images:
 
 ### Uses of Base64
 
