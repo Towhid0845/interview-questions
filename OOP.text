@@ -1,3 +1,0 @@
-✅ What is Encapsulation ?
-    ➡️ It is the mechanism of hiding of data implementation by restricting access to public methods. Instance 
-        variables are kept private and accessor methods are made public to achieve this.
