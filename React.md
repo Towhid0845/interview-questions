@@ -20,3 +20,101 @@ React has gained significant popularity compared to other JavaScript frameworks 
 9. **Performance**: React's efficient rendering and update mechanisms contribute to better performance, especially in applications with complex UIs.
 
 10. **Adoption by Major Companies**: Many large companies, including Facebook (which developed React), Instagram, and Airbnb, use React, which boosts its credibility and encourages other developers to adopt it.
+
+
+## Describe the lifecycle of React component and how you would use it to fetch data ?
+
+React provides lifecycle methods and hooks to handle logic at these phases.
+
+### 1. **Mounting Phase**:
+This phase happens when a component is created and added to the DOM for the first time.
+
+- **`constructor()`**: (Class-based component) Called before the component is mounted. You can initialize state and bind event handlers here.
+- **`render()`**: The method where the JSX is returned to be displayed in the DOM.
+- **`componentDidMount()`**: (Class-based) Runs after the component is mounted. This is a great place to fetch data, set up subscriptions, or perform side effects.
+
+### 2. **Updating Phase**:
+This phase occurs when a component's state or props change, causing it to re-render.
+
+- **`render()`**: The component re-renders when state or props change.
+- **`componentDidUpdate(prevProps, prevState)`**: (Class-based) This method is invoked after the component is re-rendered due to state or props changes. You can perform side effects here, such as fetching new data based on the updated props or state.
+
+### 3. **Unmounting Phase**:
+This phase occurs when the component is removed from the DOM.
+
+- **`componentWillUnmount()`**: (Class-based) This method is called just before the component is removed from the DOM. It is useful for cleaning up (e.g., canceling subscriptions, clearing timers).
+
+### **Using Functional Components with Hooks**:
+React Hooks introduced a simpler way to manage component lifecycle in **functional components**, especially the `useEffect` hook, which combines the capabilities of several lifecycle methods in class components.
+
+- **`useEffect()`**: It can be used to handle side effects, including data fetching, and it runs after the component renders. It can replace `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
+
+---
+
+### **Fetching Data Using Class-based Components**:
+
+To fetch data in a class-based component, you typically use the `componentDidMount` lifecycle method. This ensures that the data is fetched after the component has been rendered into the DOM.
+
+```javascript
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: null,
+      loading: true,
+    };
+  }
+
+  componentDidMount() {
+    // Fetch data when the component is mounted
+    fetch('https://api.example.com/data')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ data: data, loading: false });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }
+
+  render() {
+    const { data, loading } = this.state;
+    return (
+      <div>
+        {loading ? <p>Loading...</p> : <div>{JSON.stringify(data)}</div>}
+      </div>
+    );
+  }
+}
+```
+
+### **Using Functional Components with `useEffect()`**:
+
+In functional components, the `useEffect` hook is the equivalent of `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`. You can use it to fetch data when the component mounts.
+
+```javascript
+import React, { useState, useEffect } from 'react';
+
+const MyComponent = () => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetch data when the component mounts
+    fetch('https://api.example.com/data')
+      .then(response => response.json())
+      .then(data => {
+        setData(data);
+        setLoading(false);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }, []); // Empty dependency array ensures this effect runs only once (on mount)
+
+  return (
+    <div>
+      {loading ? <p>Loading...</p> : <div>{JSON.stringify(data)}</div>}
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+

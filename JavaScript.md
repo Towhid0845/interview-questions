@@ -16,3 +16,24 @@ Sometimes we may need to fetch data from the server or execute a function with a
    - **Job Queue:** Every time a promise occurs in the code, the executor function gets into the job queue. The event loop works, as usual, to look into the queues but gives priority to the job queue items over the callback queue items when the stack is free. The item in the job queue is called a microtask.
 
 ## What is closure in JavaScript ? Provide an example.
+## Explain the difference between `.the()` and `async/await` in handling asynchronous operations in JavaScript.
+In JavaScript, .then() and async/await are both used to handle asynchronous operations, particularly with Promises. 
+
+`.then()` allows you to specify what should happen when a Promise is fulfilled or rejected. When a promise resolves successfully, the function inside .then() is executed. It is used with promises for asynchronous operations, chaining multiple calls for sequential execution. 
+
+`async/await` makes asynchronous code look synchronous and is syntactic sugar over Promises, improving readablility and error handling. 
+- `async` keyword is used to declare a function that returns a Promise. 
+- `await` keyword is used inside async functions to pause execution until the Promise is resolved.
+
+### Key Differences Between .then() and async/await:
+
+1. **Readability:**
+   - .`then()` requires chaining multiple calls, which can become less readable for complex logic (also known as "callback hell").
+   - `async/await` makes code look synchronous and more readable, especially with try/catch blocks for error handling.
+
+2. **Error Handling:**
+   - `.then()` uses `.catch()` to handle errors, whereas async/await uses try/catch blocks.
+
+3. Sequential vs. Parallel Execution:
+   - In `.then()`, multiple `.then()` calls are executed in sequence unless you manually manage them for parallel execution.
+   - With `async/await`, you can run multiple asynchronous tasks in parallel by using `Promise.all()` or other mechanisms.
