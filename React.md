@@ -1,4 +1,13 @@
-## Why React JS is populer compared to other JS frameworks like Angular? 
+## What is REACT ?
+**React** is JavaScript Library for building userinterfacce.
+Extremely popular, declarative, component-based, state-driven JavaScript library for building user interfaces created by facebook.
+
+- **Declarative: ** Telling react what a component should look like, based on current data/state.
+- Rect is **abstraction** away from DOM: we never touch the DOM.
+- **JSX: ** a syntex that combines HTML, CSS, JavaScript as well as referencing other components.
+- **State-driven: ** REACT *reacts* to state changes by re-rendering the UI.
+
+## Why React JS is popular compared to other JS frameworks like Angular?  
 React has gained significant popularity compared to other JavaScript frameworks like Angular for several reasons:
 
 1. **Component-Based Architecture**: React promotes a component-based architecture, allowing developers to build reusable UI components. This modularity makes it easier to manage and scale applications.
