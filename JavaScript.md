@@ -16,6 +16,8 @@ Sometimes we may need to fetch data from the server or execute a function with a
    - **Job Queue:** Every time a promise occurs in the code, the executor function gets into the job queue. The event loop works, as usual, to look into the queues but gives priority to the job queue items over the callback queue items when the stack is free. The item in the job queue is called a microtask.
 
 ## What is closure in JavaScript ? Provide an example.
+A closure is a feature where an inner function has access to the outer (enclosing) function's variable.
+
 ## Explain the difference between `.the()` and `async/await` in handling asynchronous operations in JavaScript.
 In JavaScript, .then() and async/await are both used to handle asynchronous operations, particularly with Promises. 
 
@@ -37,3 +39,8 @@ In JavaScript, .then() and async/await are both used to handle asynchronous oper
 3. Sequential vs. Parallel Execution:
    - In `.then()`, multiple `.then()` calls are executed in sequence unless you manually manage them for parallel execution.
    - With `async/await`, you can run multiple asynchronous tasks in parallel by using `Promise.all()` or other mechanisms.
+
+## Explain event delegation and its advantages in JS?
+Event delegation is technique where instead of adding an event listener to each similar child element, you add a single event listner to a parent element. It leverages the event budding phase to catch events form child elements.
+**Advantage:**
+- Include reduce memory usages (fewer event listner) and dynamically handling events from elements added after the initial page loaded.
