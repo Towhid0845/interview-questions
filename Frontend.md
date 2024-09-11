@@ -86,8 +86,14 @@ This approach ensures that your application complies with CORS policies and allo
 
 ## What are the SEO challenges with SPA's and how can they be addressed ?
 SPAs often struggle with SEO as content is dynamically loaded, making it hard for search engine crawlers to index. 
+
 ### Solutions include:
 - **server-side rendering (SSR)**,
 - **Using the History API to update URLs for different views** and 
 - **Leveraging pre-rendering services or static site generations (SSG)**.
 
+## Describe the CSS box model and how CSS properties related to it affect layout ?
+The CSS box model consists of four areas: **content, padding, border, and margin**.
+These layers affect the total size and spacing of an element on the page.
+
+Understanding this model is crucial for precise layout control, as it determines how elements are sized and how they interact with each other in the document flow.

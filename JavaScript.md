@@ -40,6 +40,7 @@ In JavaScript, .then() and async/await are both used to handle asynchronous oper
    - In `.then()`, multiple `.then()` calls are executed in sequence unless you manually manage them for parallel execution.
    - With `async/await`, you can run multiple asynchronous tasks in parallel by using `Promise.all()` or other mechanisms.
 
+
 ## Explain event delegation and its advantages in JS?
 Event delegation is technique where instead of adding an event listener to each similar child element, you add a single event listner to a parent element. It leverages the event budding phase to catch events form child elements.
 **Advantage:**
