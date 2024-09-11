@@ -113,3 +113,11 @@ The CSS box model consists of four areas: **content, padding, border, and margin
 These layers affect the total size and spacing of an element on the page.
 
 Understanding this model is crucial for precise layout control, as it determines how elements are sized and how they interact with each other in the document flow.
+
+## What is tree shaking and how does it help in frontt-end development ?
+Tree shaking is a process used in modern build tools like Webpack to eliminate unused code from the final bundle.
+It improves performance by reducing the size of the JavaScript files that browsers need to load, parse, and execute, leading to faster page load times.
+
+## Compare Css Flexbox and Grid. When would you use one ove the other ?
+Flexbox is a one-dimensional layout method ideal for arranging items in asingle row or column, offering control over alignment and spacing. Use Flexbox for simpler, linear layouts.
+Grid is a two-dimensional layout system, perfect for creating complex layouts and aligning content within rows and columns. Use Grid for more complex, multi-dimensional layouts. 

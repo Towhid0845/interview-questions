@@ -127,3 +127,6 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
+## Compare the useState and useReducer hooks in React.
+- `useState` is suitable for simple state logic, providing a variable and function to update it. 
+- `useReducer` is better for complex state logic that involvs multiple sub-values or when the next state depends on the previous one, as it lets you manage local state of complex components with a reducer function.
