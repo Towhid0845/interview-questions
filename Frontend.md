@@ -121,3 +121,20 @@ It improves performance by reducing the size of the JavaScript files that browse
 ## Compare Css Flexbox and Grid. When would you use one ove the other ?
 Flexbox is a one-dimensional layout method ideal for arranging items in asingle row or column, offering control over alignment and spacing. Use Flexbox for simpler, linear layouts.
 Grid is a two-dimensional layout system, perfect for creating complex layouts and aligning content within rows and columns. Use Grid for more complex, multi-dimensional layouts. 
+
+
+## What  makes a web application a PWAs ?
+PWAs are web application that use modern web technologies to provide a fast, reliable, and engaging user experience, key features include the ability to work offline, receive push notifications, and access hardware features, wich can improve engagement and performance on mobile devices.
+
+## What key performance metrices would you consider critical for a web application ?
+Critical web performance metrics include First Contentful Paint (FCP), Largest Contentful Paint (LCP), Time to Interactive (TTI), Speed Index, Cumulative Layout Shift (CLS), and First Input Delay (FID). These metrics help understand the loading experience,interactivity, and vsual stability of a page.
+
+## How do you protect a front-end appliacation from common security threats ?
+To peotect a front-end application, implement Content Security Policy (CSP), sanitize user input to prevent XSS attacks, use HTTPS for securely, and keep dependencies up to date to avoid vulnerabilities.
+
+## Compare server-side rendering (SSR) and client-side rendering (CSR).
+- CST renders pages directly in the browser using JavaScript, leading to faster subsequent page loads and a smoother usr experience. Use CSR for dynamic, app-like experiences.
+- SSR generates HTML on the server and sends it to the client, improving initial load time and SEO. Use SSR for static sites or when SEO is a priority.
+
+## What strategies and tools do you use for front-end testing ?
+Effective front-end testing strategies include unit testing with Jest. integration testing with React Testing Library, and end-to-end testing with Cypress or Selenium. Each testing type targets different aspects of the application, from inividual functions and components to integrated workflows and the full user experience.
