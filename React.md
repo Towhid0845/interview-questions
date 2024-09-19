@@ -130,3 +130,12 @@ export default MyComponent;
 ## Compare the useState and useReducer hooks in React.
 - `useState` is suitable for simple state logic, providing a variable and function to update it. 
 - `useReducer` is better for complex state logic that involvs multiple sub-values or when the next state depends on the previous one, as it lets you manage local state of complex components with a reducer function.
+
+## What are the features of React JS ?
+1. **JSX:** It serves as a syntax extension to JavaScript, facilitating the combination of HTML structures with JavaScript code within React files.
+2. **Components:** A block of code that is dedicated to a smaller UI portion. Otherwords, we can divide a UI into multiple coding block so the we cand reuse it.
+3. **Virtual DOM:** React employs a Virtual DOM, which is a lightweight representation of the actual DOM stored in memory. This approach allows React to selectively update only the relevant parts of the real DOM when the state of an object changes.
+4. **Data Binding:** React adopts a one-way data-binding approach, ensuring a modular and efficient structure. Unidirectional data flew signifies that in a React app, child components are often nested within parent components.
+5. **High Performance:** React's high performance is driven by its ability to update only the components that undergo changes, rather than refreshing the entire set. This results in significantly faster web applications.
+
+## 
