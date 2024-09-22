@@ -2,7 +2,7 @@
 **React** is JavaScript Library for building userinterfacce.
 Extremely popular, declarative, component-based, state-driven JavaScript library for building user interfaces created by facebook.
 
-- **Declarative: ** Telling react what a component should look like, based on current data/state.
+- **Declarative:** Telling react what a component should look like, based on current data/state.
 - Rect is **abstraction** away from DOM: we never touch the DOM.
 - **JSX: ** a syntex that combines HTML, CSS, JavaScript as well as referencing other components.
 - **State-driven: ** REACT *reacts* to state changes by re-rendering the UI.
@@ -29,6 +29,15 @@ React has gained significant popularity compared to other JavaScript frameworks 
 9. **Performance**: React's efficient rendering and update mechanisms contribute to better performance, especially in applications with complex UIs.
 
 10. **Adoption by Major Companies**: Many large companies, including Facebook (which developed React), Instagram, and Airbnb, use React, which boosts its credibility and encourages other developers to adopt it.
+
+## What are the features of React JS ?
+1. **JSX:** It serves as a syntax extension to JavaScript, facilitating the combination of HTML structures with JavaScript code within React files.
+2. **Components:** A block of code that is dedicated to a smaller UI portion. Otherwords, we can divide a UI into multiple coding block so the we cand reuse it.
+3. **Virtual DOM:** React employs a Virtual DOM, which is a lightweight representation of the actual DOM stored in memory. This approach allows React to selectively update only the relevant parts of the real DOM when the state of an object changes.
+4. **Data Binding:** React adopts a one-way data-binding approach, ensuring a modular and efficient structure. Unidirectional data flew signifies that in a React app, child components are often nested within parent components.
+5. **High Performance:** React's high performance is driven by its ability to update only the components that undergo changes, rather than refreshing the entire set. This results in significantly faster web applications.
+
+## How to Components in React JS ?
 
 
 ## Describe the lifecycle of React component and how you would use it to fetch data ?
@@ -130,12 +139,3 @@ export default MyComponent;
 ## Compare the useState and useReducer hooks in React.
 - `useState` is suitable for simple state logic, providing a variable and function to update it. 
 - `useReducer` is better for complex state logic that involvs multiple sub-values or when the next state depends on the previous one, as it lets you manage local state of complex components with a reducer function.
-
-## What are the features of React JS ?
-1. **JSX:** It serves as a syntax extension to JavaScript, facilitating the combination of HTML structures with JavaScript code within React files.
-2. **Components:** A block of code that is dedicated to a smaller UI portion. Otherwords, we can divide a UI into multiple coding block so the we cand reuse it.
-3. **Virtual DOM:** React employs a Virtual DOM, which is a lightweight representation of the actual DOM stored in memory. This approach allows React to selectively update only the relevant parts of the real DOM when the state of an object changes.
-4. **Data Binding:** React adopts a one-way data-binding approach, ensuring a modular and efficient structure. Unidirectional data flew signifies that in a React app, child components are often nested within parent components.
-5. **High Performance:** React's high performance is driven by its ability to update only the components that undergo changes, rather than refreshing the entire set. This results in significantly faster web applications.
-
-## 
