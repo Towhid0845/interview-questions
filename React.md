@@ -4,8 +4,8 @@ Extremely popular, declarative, component-based, state-driven JavaScript library
 
 - **Declarative:** Telling react what a component should look like, based on current data/state.
 - Rect is **abstraction** away from DOM: we never touch the DOM.
-- **JSX: ** a syntex that combines HTML, CSS, JavaScript as well as referencing other components.
-- **State-driven: ** REACT *reacts* to state changes by re-rendering the UI.
+- **JSX:** a syntex that combines HTML, CSS, JavaScript as well as referencing other components.
+- **State-driven:** REACT *reacts* to state changes by re-rendering the UI.
 
 ## Why React JS is popular compared to other JS frameworks like Angular?  
 React has gained significant popularity compared to other JavaScript frameworks like Angular for several reasons:
