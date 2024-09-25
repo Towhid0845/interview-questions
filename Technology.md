@@ -1,5 +1,8 @@
 ## ✅ How do you learn new technology❓
-n/a 
+- If it's a new programming language or framework, I usually start with an online course to get a solid foundation (for example, I did this for Web design, JavaScript, React, and Next.js). 
+- For updates on new technology or tools, I keep an eye on platforms like dev.io, LinkedIn, and Medium for articles and study materials. 
+- When it comes to troubleshooting or solving issues, I turn to Stack Overflow, ChatGPT, Quora, and YouTube for guidance. 
+- And, of course, I can always rely on seniors and colleagues for advice and support. 
 
 ## ✅ What is electron js?
 Electron is a framework for building desktop applications using JavaScript, HTML, and CSS. By embedding Chromium and Node. js into its binary, Electron allows you to maintain one JavaScript codebase and create cross-platform apps that work on Windows, macOS, and Linux — no native development experience is required.
